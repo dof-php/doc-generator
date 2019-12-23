@@ -1,0 +1,37 @@
+{
+    "name": "dof-php/doc-generator",
+    "description": "The document generator of DOF PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dof-php",
+            "email": "me@dof.php"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "dof-php/ddd": "dev-master",
+        "dof-php/http": "dev-master",
+        "dof-php/framework": "dev-master"
+    },
+    "require-dev": {
+        "dof-php/testing": "dev-master"
+    },
+ 	"autoload": {
+		"psr-4": {
+			"DOF\\DOC\\": "./src/"
+		},
+		"files": [
+		],
+		"exclude-from-classmap": [
+       ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DOF\\DOC\\Test\\": "./test/"
+        }
+    },
+	"minimum-stability": "dev",
+    "prefer-stable": true
+}
