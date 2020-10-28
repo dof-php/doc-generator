@@ -35,7 +35,7 @@ final class Generator
             ->setWrapins(WrapinManager::getData())
             ->setModels(ModelManager::getData())
             ->setEntities(EntityManager::getData())
-            ->setErrors(ErrManager::getData())
+            ->setErrors(ErrManager::getAll())
             ->build();
     }
 }
